@@ -18,7 +18,7 @@ lio_sam_6axis:
   useGPS: false                               # if using GPS data, set to "true"
   updateOrigin: true                          # when you can not get a reliable gps origin points(RTK fixed)
   gpsFrequence: 10                            # set proper gps frequence to align gps and lidar timestamp
-  useImuHeadingInitialization: false         # if using GPS data, set to "false"
+  useImuHeadingInitialization: true         # if using GPS data, set to "false"
   useGpsElevation: false                      # if GPS elevation is bad, set to "false"
   gpsCovThreshold: 8                        # m^2, threshold for using GPS data
   poseCovThreshold: 25.0                      # m^2, threshold for using GPS data
@@ -27,7 +27,7 @@ lio_sam_6axis:
   # debug setting
   debugLidarTimestamp: false
   debugImu: false
-  debugGps: true
+  debugGps: false
 
   # Export settings
   savePCD: false                              # https://github.com/TixiaoShan/LIO-SAM/issues/3
@@ -46,7 +46,7 @@ lio_sam_6axis:
   imuAccBiasN: 6.4356659353532566e-05
   imuGyrBiasN: 3.5640318696367613e-05
   imuGravity: 9.80511
-  imuRPYWeight: 0.01
+  imuRPYWeight: 0.00
 
   # Extrinsics (lidar -> IMU)
   imu_type: 0   # 0: 6axis, 1:9 axis
@@ -57,7 +57,7 @@ lio_sam_6axis:
   # extrinsicRPY: [ 1, 0, 0,
   #                 0, 1, 0,
   #                 0, 0, 1 ]
-  extrinsicTrans: [0, 0, 0]
+  extrinsicTrans: [0.08, 0, 0.28375]
   extrinsicRot: [0.909884, -0.270347, 0.314679,
                   -0.270347, 0.188959, 0.944038,
                   0.314679, 0.944038, 0.0988438]

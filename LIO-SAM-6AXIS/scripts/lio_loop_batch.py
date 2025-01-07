@@ -20,9 +20,9 @@ plat_data_pair_list = [
     # ('hilti', 'exp21')
 ]
 
-bag_path_download = '/home/xchu/data/ramlab_dataset/'
+bag_path_download = '/home/zhao/WS/msfl_ws/data/ROSBAG/'
 bag_path_list = [
-    bag_path_download + 'hkust_20201105full.bag'
+    bag_path_download + 'msfl.bag'
     # bag_path_download + '20220226_campus_road_day_ref.bag'
     # bag_path_download + 'exp01_construction_ground_level.bag',
     # bag_path_download + 'exp02_construction_multilevel.bag',
